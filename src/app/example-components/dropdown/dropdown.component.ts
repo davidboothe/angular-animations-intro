@@ -12,12 +12,12 @@ import {animate, state, style, transition, trigger} from "@angular/animations";
     trigger('toggleMenu', [
       // state() function defines the end result of the animation
       state('open', style({
-        height: '200px',
-        opacity: 1
+        height: '*',
+        opacity: 1,
       })),
       state('closed', style({
-        height: '0px',
-        opacity: 0
+        height: 0,
+        opacity: 0,
       })),
       // transition() function defines the transition between the states
       transition('open <=> closed', [
